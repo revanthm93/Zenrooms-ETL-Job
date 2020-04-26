@@ -55,6 +55,7 @@ def main(fname):
     # Save the dataframe to the postgres database table.
     try:
         transform_and_filter(raw_data).write.mode("append").jdbc(url=db_url, table='tweets', properties=db_properties)
+        spark.stop()
         logger.info("Processed data successfully loaded to Postgres table : tweets!")
     except Exception as e:
         logger.error("Error while writing data to Postgres Table. %s ",e)
