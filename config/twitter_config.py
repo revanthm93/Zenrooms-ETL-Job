@@ -1,0 +1,6 @@
+consumerKey="JDznrK3VuBoW3ruPOWYJB9sHX"
+consumerSecret="PjXJKjgYqpZilTdoPGWm11KmhV53U2u4ukKusJiIjLO4LTrpX7"
+accessToken="3030105788-pPWgi3BvfOK6TPhNVwQshamVCoKPGcpUCzCO7Yr"
+accessTokenSecret="s0Zo21pULEpvMm3mpl0pnmiqKUcpQyHwFSqd2RR7OY1ul"
+lang = "en"
+track = "corona"

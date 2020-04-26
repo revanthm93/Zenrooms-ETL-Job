@@ -1,0 +1,37 @@
+2020-04-26 19:47:30,295 - __main__ - INFO - Tweets Collected!
+2020-04-26 19:47:30,295 - __main__ - INFO - Triggering Spark-Postgres ETL Job.
+2020-04-26 19:58:52,634 - __main__ - INFO - Tweets Collected!
+2020-04-26 19:58:52,635 - __main__ - INFO - Triggering Spark-Postgres ETL Job.
+2020-04-26 20:03:08,427 - __main__ - INFO - Authenticating to twitter API
+2020-04-26 20:03:15,265 - __main__ - INFO - Tweets Collected!
+2020-04-26 20:03:15,265 - __main__ - INFO - Triggering Spark-Postgres ETL Job.
+2020-04-26 20:04:13,936 - __main__ - INFO - Authenticating to twitter API
+2020-04-26 20:04:15,544 - __main__ - INFO - OAuth authentication suceessful.
+2020-04-26 20:04:20,755 - __main__ - INFO - Tweets Collected!
+2020-04-26 20:04:20,755 - __main__ - INFO - Triggering Spark-Postgres ETL Job.
+2020-04-26 20:07:15,723 - __main__ - INFO - Authenticating to Twitter API
+2020-04-26 20:07:17,164 - __main__ - INFO - OAuth authentication successful.
+2020-04-26 20:07:22,427 - __main__ - INFO - Tweets Collected!
+2020-04-26 20:07:22,427 - __main__ - INFO - Triggering Spark-Postgres ETL Job.
+2020-04-26 20:12:33,885 - __main__ - INFO - Authenticating to Twitter API
+2020-04-26 20:12:35,016 - __main__ - INFO - OAuth authentication successful.
+2020-04-26 20:12:40,250 - __main__ - INFO - Tweets Collected!
+2020-04-26 20:12:40,251 - __main__ - INFO - Triggering Spark-Postgres ETL Job.
+2020-04-26 20:22:53,371 - __main__ - INFO - Authenticating to Twitter API
+2020-04-26 20:22:54,591 - __main__ - INFO - OAuth authentication successful.
+2020-04-26 20:22:59,807 - __main__ - INFO - Tweets Collected!
+2020-04-26 20:22:59,807 - __main__ - INFO - Triggering Spark-Postgres ETL Job.
+2020-04-26 20:22:59,807 - scripts.spark_postgres_ETL - INFO - Reading extracted json as Spark dataframe
+2020-04-26 20:23:12,326 - scripts.spark_postgres_ETL - INFO - Cleaning data by dropping unnecessary fields
+2020-04-26 20:23:13,217 - scripts.spark_postgres_ETL - INFO - Filtering data by location (India)
+2020-04-26 20:23:13,619 - scripts.spark_postgres_ETL - INFO - Writing processed data to postgres
+2020-04-26 20:23:20,675 - scripts.spark_postgres_ETL - INFO - Processed data successfully loaded to Postgres table : tweets!
+2020-04-26 20:26:50,945 - __main__ - INFO - Authenticating to Twitter API
+2020-04-26 20:26:52,303 - __main__ - INFO - OAuth authentication successful.
+2020-04-26 20:26:57,561 - __main__ - INFO - Tweets Collected!
+2020-04-26 20:26:57,561 - __main__ - INFO - Triggering Spark-Postgres ETL Job.
+2020-04-26 20:26:57,561 - scripts.spark_postgres_ETL - INFO - Reading extracted json as Spark dataframe
+2020-04-26 20:27:12,598 - scripts.spark_postgres_ETL - INFO - Cleaning data by dropping unnecessary fields
+2020-04-26 20:27:13,532 - scripts.spark_postgres_ETL - INFO - Filtering data by location (India)
+2020-04-26 20:27:13,985 - scripts.spark_postgres_ETL - INFO - Writing processed data to postgres
+2020-04-26 20:27:22,683 - scripts.spark_postgres_ETL - INFO - Processed data successfully loaded to Postgres table : tweets!
