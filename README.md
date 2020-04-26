@@ -13,20 +13,31 @@ What is What?
 requirements.txt - It consists of all the required python modules for this project. Simply use pip install -r requirements.txt
 
 config:
+
 logging.yaml - contains logging configurations.
+
 twitter_config.py - contains twitter api access keys and tokens.
+
 db_properties.ini - contains all database configurations and properties.
 
 jars:
+
 postgresql-42.2.12.jar - contains jar required to establish a JDBC connection to postgres table.
 
 logs:
+
 info.log - file where info logs will be appended.
+
 errors.log - file where errors logs will be appended.
 
 data:
+
 <keyword>.json - file where the tweets gets dumped.
 
 scripts:
-extract_tweets.py - Python script which reads all configuration parameters, establishes a secured Oauth connection to Twitter API, queries tweets that contains given keyword, dump the result into json file and calls the spark job to process the raw data.
+
+extract_tweets.py - Python script which reads all configuration parameters, establishes a secured Oauth connection to Twitter API, 
+
+queries tweets that contains given keyword, dump the result into json file and calls the spark job to process the raw data.
+
 spark_postgres_ETL.py - Python script which cleans, filter, transform and process the data, establishes a connection to postgres DB and write data to table.
