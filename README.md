@@ -6,7 +6,7 @@ Load - Store the processed data to database. (Postgres)
 
 How the ETL solution works?
 
-A secured OAuth authenticated connection will be established to Twitter API (extract_tweets.py), query tweets which contains the tracking-keyword (configurable through config/config.py), dump the result to a json file (data/<keyword>.json), calls the spark job (spark_postgres_ETL.py) bu itself which cleans and transform the data and write the processed data to postgres database table.
+A secured OAuth authenticated connection will be established to Twitter API, query tweets which contains the tracking-keyword (configurable through config/config.py), dump the result to a json file (data/<keyword>.json), tranform, cleans and filters data and loads the processed data to postgres database table.
 
 What is What?
 
@@ -36,8 +36,4 @@ data:
 
 scripts:
 
-extract_tweets.py - Python script which reads all configuration parameters, establishes a secured Oauth connection to Twitter API, 
-
-queries tweets that contains given keyword, dump the result into json file and calls the spark job to process the raw data.
-
-spark_postgres_ETL.py - Python script which cleans, filter, transform and process the data, establishes a connection to postgres DB and write data to table.
+etl_job.py - Python script which reads all configuration parameters, establishes a secured Oauth connection to Twitter API, queries tweets that contains given keyword, dump the result into json file and process the raw data, cleans, filter, transform and process the data, establishes a connection to postgres DB and write data to table.
