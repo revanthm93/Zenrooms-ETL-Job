@@ -53,3 +53,94 @@
 2020-04-26 22:21:14,628 - scripts.spark_postgres_ETL - INFO - Filtering data by location (India)
 2020-04-26 22:21:19,172 - scripts.spark_postgres_ETL - INFO - Writing processed data to postgres
 2020-04-26 22:22:11,247 - scripts.spark_postgres_ETL - INFO - Processed data successfully loaded to Postgres table : tweets!
+2020-04-28 18:29:32,123 - __main__ - INFO - Authenticating to Twitter API
+2020-04-28 18:29:50,771 - __main__ - INFO - OAuth authentication successful.
+2020-04-28 18:29:56,104 - __main__ - INFO - Tweets Collected!
+2020-04-28 18:29:56,104 - __main__ - INFO - Triggering Spark-Postgres ETL Job.
+2020-04-28 18:29:56,104 - __main__ - ERROR - Error while triggering Spark Job
+2020-04-28 19:44:47,047 - __main__ - INFO - Authenticating to Twitter API
+2020-04-28 19:44:59,375 - __main__ - INFO - OAuth authentication successful.
+2020-04-28 19:45:04,592 - __main__ - INFO - Tweets Collected!
+2020-04-28 19:45:04,592 - __main__ - INFO - Creating Spark Session
+2020-04-28 19:45:55,605 - __main__ - INFO - Cleaning data by dropping unnecessary fields
+2020-04-28 19:45:56,671 - __main__ - INFO - Filtering data by location (India)
+2020-04-28 19:45:57,242 - __main__ - INFO - Writing processed data to postgres
+2020-04-28 19:45:58,477 - __main__ - ERROR - Error while writing data to Postgres Table. An error occurred while calling o98.jdbc.
+: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.apache.spark.sql.execution.datasources.jdbc.DriverRegistry$.register(DriverRegistry.scala:45)
+	at org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions$$anonfun$5.apply(JDBCOptions.scala:99)
+	at org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions$$anonfun$5.apply(JDBCOptions.scala:99)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.sql.execution.datasources.jdbc.JDBCOptions.<init>(JDBCOptions.scala:99)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcOptionsInWrite.<init>(JDBCOptions.scala:190)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcOptionsInWrite.<init>(JDBCOptions.scala:194)
+	at org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:45)
+	at org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:45)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:70)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:68)
+	at org.apache.spark.sql.execution.command.ExecutedCommandExec.doExecute(commands.scala:86)
+	at org.apache.spark.sql.execution.SparkPlan$$anonfun$execute$1.apply(SparkPlan.scala:131)
+	at org.apache.spark.sql.execution.SparkPlan$$anonfun$execute$1.apply(SparkPlan.scala:127)
+	at org.apache.spark.sql.execution.SparkPlan$$anonfun$executeQuery$1.apply(SparkPlan.scala:155)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:152)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:127)
+	at org.apache.spark.sql.execution.QueryExecution.toRdd$lzycompute(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.toRdd(QueryExecution.scala:81)
+	at org.apache.spark.sql.DataFrameWriter$$anonfun$runCommand$1.apply(DataFrameWriter.scala:676)
+	at org.apache.spark.sql.DataFrameWriter$$anonfun$runCommand$1.apply(DataFrameWriter.scala:676)
+	at org.apache.spark.sql.execution.SQLExecution$$anonfun$withNewExecutionId$1.apply(SQLExecution.scala:80)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:127)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:75)
+	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:676)
+	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:285)
+	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:271)
+	at org.apache.spark.sql.DataFrameWriter.jdbc(DataFrameWriter.scala:515)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:238)
+	at java.lang.Thread.run(Unknown Source)
+ 
+2020-04-28 19:47:38,720 - __main__ - INFO - Authenticating to Twitter API
+2020-04-28 19:47:54,708 - __main__ - INFO - OAuth authentication successful.
+2020-04-28 19:47:59,961 - __main__ - INFO - Tweets Collected!
+2020-04-28 19:47:59,961 - __main__ - INFO - Creating Spark Session
+2020-04-28 19:48:29,649 - __main__ - INFO - Cleaning data by dropping unnecessary fields
+2020-04-28 19:48:30,388 - __main__ - INFO - Filtering data by location (India)
+2020-04-28 19:48:30,701 - __main__ - INFO - Writing processed data to postgres
+2020-04-28 19:48:38,293 - __main__ - INFO - Processed data successfully loaded to Postgres table : tweets!
+2020-04-28 19:50:19,145 - __main__ - INFO - Authenticating to Twitter API
+2020-04-28 19:50:37,007 - __main__ - INFO - OAuth authentication successful.
+2020-04-28 19:50:42,286 - __main__ - INFO - Tweets Collected!
+2020-04-28 19:50:42,286 - __main__ - INFO - Creating Spark Session
+2020-04-28 19:51:13,423 - __main__ - INFO - Cleaning data by dropping unnecessary fields
+2020-04-28 19:51:14,261 - __main__ - INFO - Filtering data by location (India)
+2020-04-28 19:51:14,839 - __main__ - INFO - Writing processed data to postgres
+2020-04-28 19:51:23,219 - __main__ - INFO - Processed data successfully loaded to Postgres table : tweets!
+2020-04-28 19:53:53,592 - __main__ - INFO - Authenticating to Twitter API
+2020-04-28 19:54:09,078 - __main__ - INFO - OAuth authentication successful.
+2020-04-28 19:54:14,315 - __main__ - INFO - Tweets Collected!
+2020-04-28 19:54:14,315 - __main__ - INFO - Creating Spark Session
+2020-04-28 19:54:57,278 - __main__ - INFO - Cleaning data by dropping unnecessary fields
+2020-04-28 19:54:58,262 - __main__ - INFO - Filtering data by location (India)
+2020-04-28 19:54:58,825 - __main__ - INFO - Writing processed data to postgres
+2020-04-28 19:55:09,957 - __main__ - INFO - Processed data successfully loaded to Postgres table : tweets!
+2020-04-28 19:57:41,090 - __main__ - INFO - Authenticating to Twitter API
+2020-04-28 20:00:23,802 - __main__ - INFO - Authenticating to Twitter API
+2020-04-28 20:00:33,070 - __main__ - INFO - OAuth authentication successful.
+2020-04-28 20:00:38,263 - __main__ - INFO - Tweets Collected!
+2020-04-28 20:00:38,263 - __main__ - INFO - Creating Spark Session
+2020-04-28 20:01:09,706 - __main__ - INFO - Cleaning data by dropping unnecessary fields
+2020-04-28 20:01:11,163 - __main__ - INFO - Filtering data by location (India)
+2020-04-28 20:01:11,726 - __main__ - INFO - Writing processed data to postgres
+2020-04-28 20:01:22,422 - __main__ - INFO - Processed data successfully loaded to Postgres table : tweets!
