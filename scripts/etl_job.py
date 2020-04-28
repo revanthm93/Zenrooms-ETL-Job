@@ -18,7 +18,7 @@ def main():
     extract_data(fname)
 
 
-def get_dbprop1(config_path):
+def get_dbprop(config_path):
     # parsing db properties from config file
     db_properties = {}
     dbconfig = configparser.ConfigParser()
@@ -97,7 +97,7 @@ def transform_data(fname):
 def load_data(spark, df):
     # load the dataframe to the postgres database table.
     try:
-        db_url, db_properties = get_dbprop1(config_path)
+        db_url, db_properties = get_dbprop(config_path)
         df.write.mode("append").jdbc(url=db_url, table='tweets', properties=db_properties)
         logger.info("Processed data successfully loaded to Postgres table : tweets!")
         # spark.stop()

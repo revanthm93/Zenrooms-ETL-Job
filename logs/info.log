@@ -144,3 +144,18 @@
 2020-04-28 20:01:11,163 - __main__ - INFO - Filtering data by location (India)
 2020-04-28 20:01:11,726 - __main__ - INFO - Writing processed data to postgres
 2020-04-28 20:01:22,422 - __main__ - INFO - Processed data successfully loaded to Postgres table : tweets!
+2020-04-28 20:05:41,186 - __main__ - INFO - OAuth authentication successful.
+2020-04-28 20:05:46,422 - __main__ - INFO - Tweets Collected!
+2020-04-28 20:05:46,422 - __main__ - INFO - Creating Spark Session
+2020-04-28 20:06:21,811 - __main__ - INFO - Cleaning data by dropping unnecessary fields
+2020-04-28 20:06:22,647 - __main__ - INFO - Filtering data by location (India)
+2020-04-28 20:06:23,022 - __main__ - INFO - Writing processed data to postgres
+2020-04-28 20:06:30,556 - __main__ - INFO - Processed data successfully loaded to Postgres table : tweets!
+2020-04-28 20:25:41,750 - __main__ - INFO - Authenticating to Twitter API
+2020-04-28 20:25:50,309 - __main__ - INFO - OAuth authentication successful.
+2020-04-28 20:25:55,530 - __main__ - INFO - Tweets Collected!
+2020-04-28 20:25:55,530 - __main__ - INFO - Creating Spark Session
+2020-04-28 20:26:35,327 - __main__ - INFO - Cleaning data by dropping unnecessary fields
+2020-04-28 20:26:38,305 - __main__ - INFO - Filtering data by location (India)
+2020-04-28 20:26:39,152 - __main__ - INFO - Writing processed data to postgres
+2020-04-28 20:26:50,046 - __main__ - INFO - Processed data successfully loaded to Postgres table : tweets!
